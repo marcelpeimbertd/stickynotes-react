@@ -1,0 +1,32 @@
+{
+  "name": "stickynotes",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "main": "electron-starter.js",
+  "dependencies": {
+    "node-sass": "^4.10.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts-ts": "3.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject",
+    "electron-dev": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
+    "electron": "electron .",
+    "start-electron": "concurrently \"npm start\" \"wait-on http://localhost:3000/ && npm run electron-dev\""
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.12",
+    "@types/react": "^16.7.13",
+    "@types/react-dom": "^16.0.11",
+    "concurrently": "^4.1.0",
+    "electron": "^3.0.10",
+    "typescript": "^3.2.1",
+    "wait-on": "^3.2.0"
+  }
+}
